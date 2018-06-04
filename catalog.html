@@ -11,44 +11,32 @@
 				<a href="#" class="logo">
 					<img src="#" alt="Техномарт">
 				</a>
-				<ul>
-					<li>
-						<form class="search">
-							<p>Поиск:</p>
-							<input type="search">
-						</form>
-					</li>
-					<li>
-						<a href="#" class="bookmark">Закладки: 0</a>
-					</li>
-					<li>
-						<a href="#" class="basket">Корзина: 0</a>
-					</li>
-					<li>
-						<a href="#" class="ordering">Оформить заказ</a>
-					</li>
-				</ul>
+				<form class="search">
+					<label for="">Поиск:</label>
+					<input type="search">
+				</form>
+				<a href="#" class="bookmark">Закладки: 0</a>
+				<a href="#" class="basket">Корзина: 0</a>
+				<a href="#" class="ordering">Оформить заказ</a>
 			</div>
 		</div>
 		<div class="wrapper">
 			<div class="main_header_main">
-				<h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
-					<ul class="main_header_contacts">
-						<li>
-							<p>+7 (812) 555-05-55</p>						
-						</li>
-						<li>
-							<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>						
-						</li>
-					</ul>
-				<ul class="entry">
-					<li>
+				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+					<div class="main_header_contacts">
+						<a href="">+7 (812) 555-05-55</a>
+						<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>						
+					</div>
+				<div class="entry">
 						<a href="#">Войти</a>
-					</li>
-					<li>
 						<a href="#">Регистрация</a>
-					</li>
-				</ul>
+						<div class="entry_name">
+							<p>Равшан Джамшутович</p>
+							<a href="#">Выход</a>
+						</div>
+						<a href="#">Мои заказы</a>
+						<a href="#">Личный кабинет</a>
+				</div>
 			</div>
 			<nav class="main_navigation">
 				<ul>
@@ -64,7 +52,7 @@
 		</div>
 	</header>
 	<main>
-		<nav class="group_navigation">
+		<nav class="breadcrumbs">
 			<div class="wrapper">
 				<ul>
 					<li><a href=""></a></li>
@@ -85,16 +73,12 @@
 					<form action="">
 						<input type="">
 						<input type="">
-					</form>
-					<form action="">
 						<p>ПРОИЗВОДИТЕЛИ:</p>
 						<input type="">
-					</form>
-					<form action="">
 						<p>ПИТАНИЕ:</p>
 						<input type="">
 					</form>
-					<button>ПОКАЗАТЬ</button>
+					<button type="submit">ПОКАЗАТЬ</button>
 				</aside>
 				<div class="product_grid">
 					<div class="sorting">
@@ -161,11 +145,13 @@
 							<a href="">12500 Р.</a>
 						</div>						
 					</div>
-					<div class="change_page_grid">
-						<a href="">1</a>
-						<a href="">2</a>
-						<a href="">3</a>
-						<a href="">СЛЕДУЮЩАЯ</a>
+					<div class="pagination">
+						<ul>
+							<li><a href="">1</a></li>
+							<li><a href="">2</a></li>
+							<li><a href="">3</a></li>
+							<li><a href="">СЛЕДУЮЩАЯ</a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -205,8 +191,7 @@
 			</div>
 		</div>
 		<div class="footer_footer">
-			<p class="copyright">© 2010–2017 Компания «Техномарт»
-Все права защищены</p>
+			<p class="copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
 			<div class="social">
 				<a href="">VK</a>
 				<a href="">Facebook</a>
