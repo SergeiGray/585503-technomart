@@ -12,8 +12,8 @@
 					<img src="#" alt="Техномарт">
 				</a>
 				<form class="search">
-					<label for="">Поиск:</label>
-					<input type="search">
+					<label for="search_field">Поиск:</label>
+					<input type="search" id="search_field">
 				</form>
 				<a href="#" class="bookmark">Закладки: 0</a>
 				<a href="#" class="basket">Корзина: 0</a>
@@ -65,13 +65,13 @@
 				<div class="slider_and_info">
 					<div class="slider">
 						<div class="slider_drill">
-							<img src="img/man-and-drill.jpg" alt="Дрели" width="620px" height="266px">
+							<img src="img/man-and-drill.jpg" alt="Мужчина с дрелью" width="620px" height="266px">
 							<h2>Дрели</h2>
 							<p>Соседям на радость!</p>
 							<a href="#">Открыть каталог</a>
 						</div>
 						<div class="slider_puncher">
-							<img src="img/man-and-puncher.jpg" alt="Перфораторы" width="620px" height="266px">
+							<img src="img/man-and-puncher.jpg" alt="Мужчина с перфоратором" width="620px" height="266px">
 							<h2>Перфораторы</h2>
 							<p>Настоящие мужские игрушки</p>
 							<a href="#">Открыть каталог</a>
@@ -164,6 +164,11 @@
 					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
 				<div class="services_bottom_part">
+					<form class="services_bottom_part_nav">
+						<button type="button">Доставка</button>
+						<button type="button">Гарантия</button>
+						<button type="button">Кредит</button>												
+					</form>
 					<div class="services_bottom_part_delivery">
 						<h2>Доставка</h2>
 						<p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
@@ -191,20 +196,36 @@
 					<p>Мы можем доставить ваш товар в самые отдаленные точки России!</p>
 					<p>Техномарт работает со многими транспортными компаниями:</p>
 					<ul>
-						<li><a href="">Деловые линии</a></li>
-						<li><a href="">Автотрейдинг</a></li>
-						<li><a href="">ЖелДорЭкспедиция</a></li>
+						<li><a href="#">Деловые линии</a></li>
+						<li><a href="#">Автотрейдинг</a></li>
+						<li><a href="#">ЖелДорЭкспедиция</a></li>
 					</ul>
-					<a href="">Подробнее о компании</a>
+					<a href="#">Подробнее о компании</a>
 				</div>
 				<div class="contacts">
 					<p>Контакты</p>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<img src="img/maps-mini.jpg" alt="Карта" width="300px" height="158px">
-					<a href="">Заблудились? Напишите нам!</a>
+					<img src="img/map-mini.jpg" alt="Карта" width="300px" height="158px">
+					<a href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
 		</section>
+		<section class="write_us">
+			<button>Закрыть</button>
+			<form action="">
+				<label for="your_name">Ваше имя:</label>
+				<input type="text" id="your_name" class="your_name" placeholder="Имя Фамилия">
+				<label for="your_email">Ваш e-mail:</label>
+				<input type="main" id="your_email" class="your_email" placeholder="email@example.com">
+				<label for="your_message">Текст письма:</label>
+				<textarea name="Message" id="your_message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+				<button type="submit">Отправить</button>
+			</form>
+		</section>
+		<section class="maps">
+			<button>Закрыть</button>
+			<img src="img/map_big.jpg" alt="Карта" width="940px" height="447">
+		</section>		
 	</main>
 	<footer>
 		<div class="footer_heater">
@@ -214,20 +235,20 @@
 						<img src="#" alt="Техномарт">
 					</a>
 					<ul>
-						<li><a href="">Компания</a></li>
-						<li><a href="">Новости</a></li>
-						<li><a href="">Каталог</a></li>
-						<li><a href="">Доставка</a></li>
-						<li><a href="">Контакты</a></li>
+						<li><a href="#">Компания</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Каталог</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Контакты</a></li>
 					</ul>
 				</div>
 				<div class="footer_heater_bottom">
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a href="tel: +78125550555">+7 (812) 555-05-55</a></p>
 					<ul>
-						<li><a href="">Материалы</a></li>
-						<li><a href="">Техника</a></li>
-						<li><a href="">Инструмент</a></li>
-						<li><a href="">Спецпредложения</a></li>
+						<li><a href="#">Материалы</a></li>
+						<li><a href="#">Техника</a></li>
+						<li><a href="#">Инструмент</a></li>
+						<li><a href="#">Спецпредложения</a></li>
 					</ul>
 				</div>
 			</div>
@@ -235,14 +256,14 @@
 		<div class="footer_footer">
 			<p class="copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
 			<div class="social">
-				<a href="">VK</a>
-				<a href="">Facebook</a>
-				<a href="">Instagram</a>
+				<a href="#">VK</a>
+				<a href="#">Facebook</a>
+				<a href="#">Instagram</a>
 			</div>
 			<p class="feedback">Обратная связь: <br>
 				<a href="mailto: mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
 			<p class="developed_by">Разработано — <br>
-				<a href="">htmlacademy.ru</a></p>
+				<a href="#">htmlacademy.ru</a></p>
 		</div>
 	</footer>
   </body>

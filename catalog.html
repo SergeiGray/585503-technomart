@@ -12,8 +12,8 @@
 					<img src="#" alt="Техномарт">
 				</a>
 				<form class="search">
-					<label for="">Поиск:</label>
-					<input type="search">
+					<label for="search_field">Поиск:</label>
+					<input type="search" id="search_field">
 				</form>
 				<a href="#" class="bookmark">Закладки: 0</a>
 				<a href="#" class="basket">Корзина: 0</a>
@@ -32,7 +32,7 @@
 						<a href="#">Регистрация</a>
 						<div class="entry_name">
 							<p>Равшан Джамшутович</p>
-							<a href="#">Выход</a>
+							<button type="button">Выход</button>
 						</div>
 						<a href="#">Мои заказы</a>
 						<a href="#">Личный кабинет</a>
@@ -55,7 +55,7 @@
 		<nav class="breadcrumbs">
 			<div class="wrapper">
 				<ul>
-					<li><a href=""></a></li>
+					<li><a href="">Главная</a></li>
 					<li><a href="">Каталог</a></li>
 					<li><a href="">Инструмент</a></li>
 					<li><a href="">Перфораторы</a></li>
@@ -69,14 +69,13 @@
 				</div>
 				<aside class="filter">
 					<p>Фильтр:</p>
-					<p>Цена:</p>
 					<form action="">
-						<input type="">
-						<input type="">
-						<p>Производители:</p>
-						<input type="">
-						<p>Питание:</p>
-						<input type="">
+						<label for="price_framework">Цена:</label>
+						<input type="" id="price_framework">
+						<label for="producer_framework">Производители:</label>
+						<input type="" id="producer_framework">
+						<label for="electricity_framework">Питание:</label>
+						<input type="" id="electricity_framework">
 					</form>
 					<button type="submit">Показать</button>
 				</aside>
