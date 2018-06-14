@@ -3,25 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+   	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
   </head>
   <body>
 	<header class="main_header">
 		<div class="top_header">
 			<div class="wrapper">
-				<a href="#" class="logo">
-					<img src="#" alt="Техномарт">
-				</a>
+				<a href="#" class="logo">Техномарт</a>
 				<form class="search">
-					<label for="search_field">Поиск:</label>
-					<input type="search" id="search_field">
+					<label for="search_field" class="visibility_hidden">Поиск:</label>
+					<input type="search" id="search_field" class="search_field" placeholder="Поиск:">
 				</form>
 				<a href="#" class="bookmark">Закладки: 0</a>
 				<a href="#" class="basket">Корзина: 0</a>
 				<a href="#" class="ordering">Оформить заказ</a>
 			</div>
 		</div>
-		<div class="wrapper">
-			<div class="main_header_main">
+		<div class="main_header_main">
+			<div class="wrapper">			
 				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				<div class="main_header_contacts">
 					<a href="tel: +78125550555">+7 (812) 555-05-55</a>
@@ -31,7 +32,7 @@
 						<a href="#">Войти</a>
 						<a href="#">Регистрация</a>
 				</div>
-			</div>
+
 			<nav class="main_navigation">
 				<ul>
 					<li><a href="">Главная</a></li>
@@ -42,7 +43,8 @@
 					<li><a href="">Доставка</a></li>
 					<li><a href="">Контакты</a></li>
 				</ul>
-			</nav>			
+			</nav>
+			</div>						
 		</div>
 	</header>
 	<main>
@@ -65,13 +67,13 @@
 				<div class="slider_and_info">
 					<div class="slider">
 						<div class="slider_drill">
-							<img src="img/man-and-drill.jpg" alt="Мужчина с дрелью" width="620px" height="266px">
-							<h2>Дрели</h2>
+							<img src="img/man-and-drill.jpg" alt="Мужчина с дрелью" width="620" height="266">
+							<h2>Дрели</h2>							
 							<p>Соседям на радость!</p>
 							<a href="#">Открыть каталог</a>
 						</div>
 						<div class="slider_puncher">
-							<img src="img/man-and-puncher.jpg" alt="Мужчина с перфоратором" width="620px" height="266px">
+							<img src="img/man-and-puncher.jpg" alt="Мужчина с перфоратором" width="620" height="266">
 							<h2>Перфораторы</h2>
 							<p>Настоящие мужские игрушки</p>
 							<a href="#">Открыть каталог</a>
@@ -96,7 +98,7 @@
 				</div>
 				<div class="popular_products_grid">
 					<div>
-						<img src="img/puncher-bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184px" height="164px">
+						<img src="img/puncher-bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
 						<div class="display_off">
 							<a href="">Купить</a>
 							<a href="">В закладки</a>
@@ -106,7 +108,7 @@
 						<a href="">25500 Р.</a>
 					</div>
 					<div>
-						<img src="img/puncher-bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127px" height="112px">
+						<img src="img/puncher-bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
 						<div class="display_off">
 							<a href="">Купить</a>
 							<a href="">В закладки</a>
@@ -116,7 +118,7 @@
 						<a href="">15500 Р.</a>
 					</div>
 					<div>
-						<img src="img/puncher-bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144px" height="128px">
+						<img src="img/puncher-bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 						<div class="display_off">
 							<a href="">Купить</a>
 							<a href="">В закладки</a>
@@ -126,7 +128,7 @@
 						<a href="">25500 Р.</a>
 					</div>
 					<div>
-						<img src="img/puncher-bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127px" height="112px">
+						<img src="img/puncher-bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
 						<div class="display_off">
 							<a href="">Купить</a>
 							<a href="">В закладки</a>
@@ -145,14 +147,14 @@
 					<a href="#">Все производители</a>
 				</div>
 				<div class="popular_manufacturer_grid">
-					<a href=""><img src="img/bosch.jpg" alt="bosch" width="126px" height="37px"></a>
-					<a href=""><img src="img/makita.jpg" alt="makita" width="123px" height="40px"></a>
-					<a href=""><img src="img/dewalt.jpg" alt="dewalt" width="146px" height="44px"></a>
-					<a href=""><img src="img/interskol.jpg" alt="interskol" width="200px" height="88px"></a>
-					<a href=""><img src="img/hitachi.jpg" alt="hitachi" width="169px" height="31px"></a>
-					<a href=""><img src="img/lg.jpg" alt="lg" width="121px" height="73px"></a>
-					<a href=""><img src="img/aeg.jpg" alt="aeg" width="151px" height="96px"></a>
-					<a href=""><img src="img/metabo.jpg" alt="metabo" width="204px" height="69px"></a>
+					<a href=""><img src="img/bosch.jpg" alt="bosch" width="126" height="37"></a>
+					<a href=""><img src="img/makita.jpg" alt="makita" width="123" height="40"></a>
+					<a href=""><img src="img/dewalt.jpg" alt="dewalt" width="146" height="44"></a>
+					<a href=""><img src="img/interskol.jpg" alt="interskol" width="200" height="88"></a>
+					<a href=""><img src="img/hitachi.jpg" alt="hitachi" width="169" height="31"></a>
+					<a href=""><img src="img/lg.jpg" alt="lg" width="121" height="73"></a>
+					<a href=""><img src="img/aeg.jpg" alt="aeg" width="151" height="96"></a>
+					<a href=""><img src="img/metabo.jpg" alt="metabo" width="204" height="69"></a>
 				</div>				
 			</div>
 		</section>
@@ -205,7 +207,7 @@
 				<div class="contacts">
 					<p>Контакты</p>
 					<p>Вы можете забрать товар сами, заехав в наш офис:</p>
-					<img src="img/map-mini.jpg" alt="Карта" width="300px" height="158px">
+					<img src="img/map-mini.jpg" alt="Карта" width="300" height="158">
 					<a href="#">Заблудились? Напишите нам!</a>
 				</div>
 			</div>
@@ -224,16 +226,14 @@
 		</section>
 		<section class="maps">
 			<button>Закрыть</button>
-			<img src="img/map_big.jpg" alt="Карта" width="940px" height="447">
+			<img src="img/map_big.jpg" alt="Карта" width="940" height="447">
 		</section>		
 	</main>
 	<footer>
 		<div class="footer_heater">
 			<div class="wrapper">
 				<div class="footer_heater_top">
-					<a href="#" class="logo">
-						<img src="#" alt="Техномарт">
-					</a>
+					<a href="#" class="logo">Техномарт</a>
 					<ul>
 						<li><a href="#">Компания</a></li>
 						<li><a href="#">Новости</a></li>
@@ -266,5 +266,6 @@
 				<a href="#">htmlacademy.ru</a></p>
 		</div>
 	</footer>
+	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>

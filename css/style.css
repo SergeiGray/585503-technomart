@@ -1,0 +1,137 @@
+html {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Cuprum', Arial, sans-serif;
+	font-size: 13px;
+}
+a { 
+	text-decoration: none;
+}
+/*
+КАК ПРАВИЛЬНО ПРОПИСАТЬ ЭТОТ КЛАСС?
+.visibility_hidden {
+	font-size: 0;
+	padding: 0;
+	margin: 0;
+}*/
+.wrapper {
+	width: 940px;
+	margin: auto;
+}
+					/*HEADER*/
+.top_header {
+	background-color: #293449;
+	color: #ffffff;
+}
+.logo {
+	font-size: 24px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ee3643;
+}
+.logo:hover {
+	background-color: #ca2c37;
+}
+.logo:active {
+	background-color: #ba2732;
+}
+.top_header a:not(.logo),
+.top_header .search {
+	color: #ffffff;
+	font-size: 17px;
+}
+.top_header .search .search_field {
+	background-color: #293449;
+	border: 0;
+}
+.search input::-webkit-input-placeholder {
+	color: #ffffff; 
+	opacity: 1;
+}
+.search input::-moz-placeholder { 
+	color: #ffffff; 
+	opacity: 1; 
+}
+.search input:-webkit-input-placeholder {
+	color: #ffffff; 
+	opacity: 1;
+}
+.search input:-moz-placeholder { 
+	color: #ffffff; 
+	opacity: 1; 
+}
+.top_header .search .search_field:focus,
+.top_header .search label:focus
+ {
+	background-color: #ffffff;
+	color: #000000;
+}
+.top_header .search .search_field:not(:focus):hover,
+.top_header a:not(.logo):not(.ordering):hover {
+	background-color: #212a3a;
+}
+.top_header .bookmark:active,
+.top_header .basket:active {
+	background-color: #161d29;
+	color: rgba(255, 255, 255, 0.5);	
+}
+.top_header .ordering {
+	background-color: #63a63e;
+}
+.top_header .ordering:hover {
+	background-color: #5fbb2d;
+}
+.top_header .ordering:active {
+	background-color: #518534;
+	color: rgba(255, 255, 255, 0.5);
+}
+.main_header_main {
+	background-color: #f3f7f8;
+}
+.main_header_main > .wrapper > p {
+	margin-top: 0;
+	width: 196px;
+	color: #ee3643;
+	font-style: italic;
+	font-size: 16px;
+	line-height: 23px;
+}
+.main_header_contacts a {
+	font-size: 21px;
+	color: #ee3643;
+}
+.main_header_contacts p {
+	font-size: 14px;
+	color: #32425c;
+}
+.entry a,
+.entry div p {
+	font-size: 21px;
+	color: #000000;
+}
+.entry a:hover {
+	color: #ee3643;	
+}
+.entry a:active,
+.entry div p:active {
+	color: #000000;
+	opacity: 0.3;
+}
+.entry_name + a,
+.entry_name + a + a {
+	font-size: 16px;
+	color: #32425c;
+	text-decoration: underline;
+}
+.main_navigation {
+	background-color: #32425c;
+}
+.main_navigation ul {
+	list-style: none;
+	margin: 0px;
+}
+.main_navigation li a {
+	font-size: 17px;
+	color: #ffffff;
+}
