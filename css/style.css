@@ -17,7 +17,7 @@ a {
 }*/
 .wrapper {
 	width: 940px;
-	margin: auto;
+	margin: 0 auto 0;
 }
 					/*HEADER*/
 .top_header {
@@ -45,7 +45,7 @@ a {
 	color: #ffffff;
 	font-size: 17px;
 }
-.top_header .search .search_field {
+.search_field {
 	background-color: #293449;
 	border: 0;
 }
@@ -65,13 +65,12 @@ a {
 	color: #ffffff; 
 	opacity: 1; 
 }
-.top_header .search .search_field:focus,
-.top_header .search label:focus
- {
+.search_field:focus,
+.search label:focus {
 	background-color: #ffffff;
 	color: #000000;
 }
-.top_header .search .search_field:not(:focus):hover,
+.search_field:not(:focus):hover,
 .top_header a:not(.logo):not(.ordering):hover {
 	background-color: #212a3a;
 }
@@ -93,7 +92,7 @@ a {
 .main_header_main {
 	background-color: #f3f7f8;
 }
-.main_header_main > .wrapper > p {
+.main_header_main_p {
 	margin-top: 0;
 	width: 196px;
 	color: #ee3643;
@@ -110,7 +109,7 @@ a {
 	color: #32425c;
 }
 .entry a,
-.entry div p {
+.entry_name p {
 	font-size: 21px;
 	color: #000000;
 }
@@ -118,7 +117,7 @@ a {
 	color: #ee3643;	
 }
 .entry a:active,
-.entry div p:active {
+.entry_name p:active {
 	color: #000000;
 	opacity: 0.3;
 }
@@ -136,19 +135,25 @@ a {
 	list-style: none;
 	margin: 0px;
 }
-.main_navigation li a {
+.main_navigation a {
 	font-size: 17px;
 	color: #ffffff;
 	background-color: #32425c;	
 }
-.main_navigation li a:hover {
+.main_navigation a:hover {
 	background-color: #293449;
 }
-.main_navigation li a:active {
+.main_navigation a:active {
 	background-color: #1d2739;
 	opacity: 0.5;
 }
 					/*MAIN*/
+.category_headline {
+	font-size: 30px;
+	color: #32425c;
+	font-weight: normal;
+	text-transform: uppercase;
+}					
 					/*INDEX.HTML*/
 				/*section	main_categories*/
 .main_categories {
@@ -173,8 +178,7 @@ a {
 .instrument h2,
 .technics h2,
 .discounts h2,
-.delivery h2
- {
+.delivery h2 {
 	font-size: 24px;
 	font-weight: normal;
 	color: #ffffff;
@@ -203,67 +207,38 @@ a {
 .delivery a:active {
 	background-color: rgba( 0, 0, 0, 0.3);	
 }
-.slider_and_info .slider h2 {
+.slider h2 {
 	font-size: 36px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
-.slider_and_info .slider p {
+.slider p {
 	font-size: 18px;
 	color: #ffffff;
 }
-.slider_and_info .slider a,
-.popular_products_head a,
-.popular_products_grid > div > a,
-.perforator_grid > div > a,
-.popular_manufacturer_head a,
-.services_bottom_part_credit a,
-.about_company > a,
-.contacts >a {
+.main_link {
 	background-color: #ee3643;
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
-.slider_and_info .slider a:hover,
-.popular_products_head a:hover,
-.popular_products_grid > div > a:hover,
-.perforator_grid > div > a:hover,
-.popular_manufacturer_head a:hover,
-.services_bottom_part_credit a:hover,
-.about_company > a:hover ,
-.contacts >a:hover {
+.main_link:hover {
 	background-color: #ca2c37;
 }
-.slider_and_info .slider a:active,
-.popular_products_head a:active,
-.popular_products_grid > div > a:active,
-.perforator_grid > div > a:active,
-.popular_manufacturer_head a:active,
-.services_bottom_part_credit a:active,
-.about_company > a:hover ,
-.contacts >a:hover {
+.main_link:active {
 	background-color: #ba2732;
 }
 					/*section popular_products*/
 .popular_products {
 	background-color: #ffffff;
 }
-.popular_products_head h2 {
-	font-size: 30px;
-	color: #32425c;
-	text-transform: uppercase;
-	font-weight: normal;
-}
-.popular_products_grid > div p:first-of-type,
-.perforator_grid > div p:first-of-type {
+.products_grid_item p:first-of-type {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 18px;
 	font-weight: bold;
 	color: #000000;
 }
-.popular_products_grid > div p:last-of-type,
-.perforator_grid > div p:last-of-type {
+.products_grid_item p:last-of-type {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;	
@@ -271,45 +246,38 @@ a {
 	text-decoration: line-through;
 	text-transform: uppercase;
 }
-.popular_products_grid > div > a,
-.perforator_grid > div > a {
+.products_grid_item > a {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
 	color: #ffffff;
 	text-transform: uppercase;	
 }
-.popular_products_grid > div > div > a:first-child,
-.perforator_grid > div > div > a:first-child {
+.buy_or_remember a:first-child {
 	background-color: #63a63e;
 	box-shadow: inset 0 -3px 0 #367315;
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
 }
-.popular_products_grid > div > div > a:first-child:hover,
-.perforator_grid > div > div > a:first-child:hover {
+.buy_or_remember a:first-child:hover {
 	background-color: #5fbb2d;
 	box-shadow: inset 0 -3px 0 #367315;	
 }
-.popular_products_grid > div > div > a:first-child:active,
-.perforator_grid > div > div > a:first-child:active {
+.buy_or_remember a:first-child:active {
 	background-color: #518534;
 	box-shadow: none;		
 }
-.popular_products_grid > div > div > a:last-child,
-.perforator_grid > div > div > a:last-child {
+.buy_or_remember a:last-child {
 	border: 3px solid #63a63e;
 	font-size: 14px;
 	color: #32425c;
 	text-transform: uppercase;
 }
-.popular_products_grid > div > div > a:last-child:hover,
-.perforator_grid > div > div > a:last-child:hover {
+.buy_or_remember a:last-child:hover {
 	border: 3px solid #32425c;	
 }
-.popular_products_grid > div > div > a:last-child:active,
-.perforator_grid > div > div > a:last-child:active {
+.buy_or_remember a:last-child:active {
 	border: 3px solid #32425c;
 	opacity: 0.3;
 	color: #32425c;
@@ -318,12 +286,6 @@ a {
 .popular_manufacturer {
 	background-color: #ffffff;	
 }
-.popular_manufacturer_head h2 {
-	font-size: 30px;
-	color: #32425c;
-	text-transform: uppercase;
-	font-weight: normal;
-}
 					/* section services*/
 .services_top_part h2 {
 	font-size: 30px;
@@ -331,32 +293,25 @@ a {
 	font-weight: normal;
 	text-transform: uppercase;
 }
-.services_top_part p,
-.services_bottom_part_delivery p,
-.services_bottom_part_guarantee p,
-.services_bottom_part_credit p,
-.about_company p  {
+.services_paragraph {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	color: #000000;
 	line-height: 24px;
 	margin: 0;
 }
-.services_bottom_part_delivery h2,
-.services_bottom_part_guarantee h2,
-.services_bottom_part_credit h2 {
+.services_headline {
 	font-size: 36px;
 	color: #32425c;
 	text-transform: uppercase;
 }
 					/*section about*/
-.about_company h1,
-.contacts p:first-child {
+.about_headline {
 	font-size: 30px;
 	font-weight: normal;
 	text-transform: uppercase;
 }
-.about_company > ul > li > a {
+.about_company_link {
 	font-size: 18px;
 	color: #000000;	
 }
@@ -364,7 +319,7 @@ a {
 .breadcrumbs ul {
 	list-style: none;
 }
-.breadcrumbs ul a {
+.breadcrumbs_link {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	color: #000000;
@@ -374,23 +329,16 @@ a {
 .perforator_link {
 	background-color: #f2f6f8;
 }					
-.perforator_link h2 {
-	font-size: 30px;
-	color: #32425c;
-	font-weight: normal;
-	text-transform: uppercase;
-}
 .filter {
 	background-color: #f7f3ec;
 }
-.filter p,
-.sorting p {	
+.column_pointer {	
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	color: #000000;
 	text-transform: uppercase;	
 }
-.filter > form > label {
+.filter label {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
@@ -451,19 +399,24 @@ a {
 .footer_heater_top > ul {
 	list-style: none;
 }
-.footer_heater_top > ul a {
-	font-size: 18px;
-	color: #f1f5f7;
+.grey {
+ 	color: #f1f5f7;
 }
-.footer_heater_top > ul a:hover {
+.yellow {
+	color: #ffd180;	
+}
+.footer_nav_link {
+	font-size: 18px;
+}
+.footer_nav_link:hover {
 	text-decoration: underline;
 }
-.footer_heater_top > ul a:active {
+.footer_nav_link:active {
 	opacity: 0.5;
 	text-decoration: none;
 }
-.footer_heater_bottom p,
-.footer_heater_bottom p a {
+.footer_contacts,
+.footer_contacts a {
 	font-size: 18px;
 	color: #f1f5f7;
 }
@@ -471,17 +424,7 @@ a {
 	list-style: none;
 		margin: 0;
 }
-.footer_heater_bottom > ul a {
-	font-size: 18px;
-	color: #ffd180;
-}
-.footer_heater_bottom > ul a:hover {
-	text-decoration: underline;	
-}
-.footer_heater_bottom > ul a:active {
-	opacity: 0.5;
-	text-decoration: none;	
-}
+
 .footer_footer {
 	background-color: #293449;
 }
