@@ -13,7 +13,7 @@
 			<div class="wrapper">
 				<a href="#" class="logo">Техномарт</a>
 				<form class="search">
-					<label for="search_field" class="visibility_hidden">Поиск:</label>
+					<label for="search_field" class="visually_hidden"> Поиск:</label>
 					<input type="search" id="search_field" class="search_field" placeholder="Поиск:">
 				</form>
 				<a href="#" class="bookmark">Закладки: 0</a>
@@ -23,27 +23,44 @@
 		</div>
 		<div class="main_header_main">
 			<div class="wrapper">			
-				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
+				<div class="main_header_about_market">
+					<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+				</div>
 				<div class="main_header_contacts">
-					<a href="tel: +78125550555">+7 (812) 555-05-55</a>
+					<a href="tel: +78125550555"> +7 (812) 555-05-55</a>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="entry">
+					<div class="entry_form">
 						<a href="#">Войти</a>
 						<a href="#">Регистрация</a>
-				</div>
+					</div>
+					<div class="entry_persone visually_hidden">
+						<div class="entry_name">
+							<p>Равшан Джамшутович</p>
+							<button type="button" class="visually_hidden">Выход</button>
+						</div>
 
-			<nav class="main_navigation">
-				<ul>
-					<li><a href="">Главная</a></li>
-					<li><a href="">Компания</a></li>
-					<li><a href="">Каталог</a></li>
-					<li><a href="">Новости</a></li>
-					<li><a href="">Спецпредложения</a></li>
-					<li><a href="">Доставка</a></li>
-					<li><a href="">Контакты</a></li>
-				</ul>
-			</nav>
+						<div class="entry_persone_info">
+							<a href="#">Мои заказы</a>
+							<div></div>
+							<a href="#">Личный кабинет</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<nav class="main_navigation">
+					<ul>
+						<li><a href="">Главная</a></li>
+						<li><a href="">Компания</a></li>
+						<li><a href="">Каталог</a></li>
+						<li><a href="">Новости</a></li>
+						<li><a href="">Спецпредложения</a></li>
+						<li><a href="">Доставка</a></li>
+						<li><a href="">Контакты</a></li>
+					</ul>
+				</nav>
 			</div>						
 		</div>
 	</header>
@@ -51,15 +68,15 @@
 		<section class="main_categories">
 			<div class="wrapper">
 				<div class="main_categories_cell">
-					<div class="material">
+					<div class="material categories_cell_item">
 						<h2>Материалы</h2>
 						<a href="#">На любой вкус</a>
 					</div>
-					<div class="instrument">
+					<div class="instrument categories_cell_item">
 						<h2>Инструмент</h2>
 						<a href="#">На все случаи</a>
 					</div>
-					<div class="technics">
+					<div class="technics categories_cell_item">
 						<h2>Техника</h2>
 						<a href="#">Для стройки</a>
 					</div>
@@ -67,25 +84,27 @@
 				<div class="slider_and_info">
 					<div class="slider">
 						<div class="slider_drill">
-							<img src="img/man-and-drill.jpg" alt="Мужчина с дрелью" width="620" height="266">
+							<img src="img/man-and-drill.jpg" alt="Мужчина с дрелью" width="620" height="270">
 							<h2>Дрели</h2>							
 							<p>Соседям на радость!</p>
 							<a class="main_link" href="#">Открыть каталог</a>
 						</div>
-						<div class="slider_puncher">
-							<img src="img/man-and-puncher.jpg" alt="Мужчина с перфоратором" width="620" height="266">
+						<div class="slider_puncher visually_hidden">
+							<img src="img/man-and-puncher.jpg" alt="Мужчина с перфоратором" width="620" height="270">
 							<h2>Перфораторы</h2>
 							<p>Настоящие мужские игрушки</p>
 							<a class="main_link" href="#">Открыть каталог</a>
 						</div>										
 					</div>
-					<div class="discounts">
-						<h2>Скидки 50%</h2>
-						<a href="#">На 350 товаров</a>
-					</div>
-					<div class="delivery">
-						<h2>Доставка</h2>
-						<a href="#">Бесплатно</a>
+					<div class="info">
+						<div class="discounts categories_cell_item">
+							<h2>Скидки 50%</h2>
+							<a href="#">На 350 товаров</a>
+						</div>
+						<div class="delivery categories_cell_item">
+							<h2>Доставка</h2>
+							<a href="#">Бесплатно</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -98,44 +117,60 @@
 				</div>
 				<div class="products_grid">
 					<div class="products_grid_item">
-						<img src="img/puncher-bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
-						<div class="buy_or_remember display_off">
-							<a href="#">Купить</a>
-							<a href="#">В закладки</a>
+						<div class="container_grid_item">
+							<img src="img/puncher-bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
+							<div class="buy_or_remember">
+								<a href="#">Купить</a>
+								<a href="#">В закладки</a>
+							</div>
 						</div>
 						<p>Перфоратор BOSCH BFG 9000</p>
-						<p>32500 Р.</p>
-						<a class="main_link" href="#">25500 Р.</a>
+						<div class="price">
+							<p>32500 Р.</p>
+							<a class="main_link" href="#">25500 Р.</a>
+						</div>
 					</div>
 					<div class="products_grid_item">
-						<img src="img/puncher-bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
-						<div class="buy_or_remember display_off">
-							<a href="#">Купить</a>
-							<a href="#">В закладки</a>
-						</div>						
+						<div class="container_grid_item">
+							<img src="img/puncher-bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
+							<div class="buy_or_remember">
+								<a href="#">Купить</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<p>Перфоратор BOSCH BFG 3000</p>
-						<p>22500 Р.</p>
-						<a class="main_link" href="">15500 Р.</a>
+						<div class="price">
+							<p>22500 Р.</p>
+							<a class="main_link" href="">15500 Р.</a>
+						</div>
 					</div>
 					<div class="products_grid_item">
-						<img src="img/puncher-bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
-						<div class="buy_or_remember display_off">
-							<a href="#">Купить</a>
-							<a href="#">В закладки</a>
-						</div>						
+						<div class="container_grid_item">
+							<img src="img/puncher-bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
+							<div class="buy_or_remember display_off">
+								<a href="#">Купить</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<p>Перфоратор BOSCH BFG 6000</p>
-						<p>30500 Р.</p>
-						<a class="main_link" href="">25500 Р.</a>
+						<div class="price">
+							<p>30500 Р.</p>
+							<a class="main_link" href="">25500 Р.</a>
+						</div>
 					</div>
 					<div class="products_grid_item">
-						<img src="img/puncher-bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
-						<div class="buy_or_remember display_off">
-							<a href="#">Купить</a>
-							<a href="#">В закладки</a>
-						</div>						
+						<div class="container_grid_item">
+							<img src="img/puncher-bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
+							<div class="buy_or_remember display_off">
+								<a href="#">Купить</a>
+								<a href="#">В закладки</a>
+							</div>
+						</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
-						<p></p>
-						<a class="main_link" href="">12500 Р.</a>
+						<div class="price">
+							<p></p>
+							<a class="main_link" href="">12500 Р.</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -162,26 +197,26 @@
 			<div class="wrapper">
 				<div class="services_top_part">
 					<h2>Сервисы</h2>
-					<p class="services_paragraph">Хороший интернет-магазин отличается от плохого не только ценами!</p>
-					<p>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+					<p class="services_paragraph">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
 				<div class="services_bottom_part">
-					<form class="services_bottom_part_nav">
-						<button type="button">Доставка</button>
-						<button type="button">Гарантия</button>
-						<button type="button">Кредит</button>												
-					</form>
-					<div class="services_bottom_part_delivery">
+					<ul class="services_bottom_part_nav">
+						<li>Доставка</li>
+						<li>Гарантия</li>
+						<li>Кредит</li>							
+					</ul>
+					<div class="services_delivery">
 						<h2 class="services_headline">Доставка</h2>
 						<p class="services_paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
 						<p class="services_paragraph">Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
 					</div>
-					<div class="services_bottom_part_guarantee">
+					<div class="services_guarantee">
 						<h2 class="services_headline">Гарантия</h2>
 						<p class="services_paragraph">Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. </p>
 						<p class="services_paragraph">Дом уж восстановите как-нибудь сами.</p>
 					</div>
-					<div class="services_bottom_part_credit">
+					<div class="services_credit">
 						<h2 class="services_headline">Кредит</h2>
 						<p class="services_paragraph">Залезть в долговую яму стало проще!</p>
 						<p class="services_paragraph">Кредитные консультанты придут вам на помощь.</p>
