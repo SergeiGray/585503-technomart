@@ -287,14 +287,6 @@ a {
 	background: url(../img/icon-login.svg) no-repeat;
 	opacity: 0.3;
 }
-.entry_persone p {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-width: 300px;
-	min-height: 45px;
-	margin: 0;
-}
 .entry_form a:last-child {
 	display: flex;
 	justify-content: center;
@@ -345,12 +337,48 @@ a {
 }
 .entry_name {
 	display: flex;
-	justify-content: center;
+	position: relative;
+	justify-content: flex-start;
 	align-items: center;	
 	min-width: 300px;
 	min-height: 45px;
 	background-color: #ffffff;		
-	margin-bottom: 10px;	
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+.entry_name p {
+	margin: 0 0 0 45px;
+}
+.entry_name:before {
+	content: '';
+	position: absolute;
+	top: 13px;
+	left: 13px;
+	width: 20px;
+	height: 18px;
+	background-image: url(../img/icon-user.svg);
+	background-repeat: no-repeat;
+}
+.entry_name:hover:before {
+	background-image: url(../img/icon-user-hover.svg);	
+}
+.entry_name:active:before {
+	background-image: url(../img/icon-user.svg);	
+}
+.entry_name label[for="button_entry"] {
+	position: absolute;
+	top: 13px;
+	right: 10px;
+	width: 20px;
+	height: 17px;
+	background-image: url(../img/icon-logout.svg);
+	background-repeat: no-repeat;
+}
+.entry_name:hover label[for="button_entry"] {
+	background-image: url(../img/icon-logout-hover.svg);	
+}
+.entry_name:active label[for="button_entry"] {
+	background-image: url(../img/icon-logout.svg);	
 }
 .main_navigation {
 	width: 100%;
@@ -807,6 +835,7 @@ a {
 	background-color: #f4f7f9;
 	padding-top: 65px;
 	padding-bottom: 105px;
+	overflow: hidden;
 }
 .services_top_part {
 	margin-bottom: 70px;
@@ -836,11 +865,37 @@ a {
 	align-items: flex-start;
 	position: relative;
 }
-/*.services_delivery,*/
+/*.services_delivery,
 .services_guarantee,
 .services_credit {
 	display: none;
+}*/
+#services_delivery_on:checked ~ .services_delivery {
+	display: block;
 }
+#services_delivery_on:checked ~ .services_guarantee,
+#services_delivery_on:checked ~ .services_credit {
+	display: none;
+}
+#services_guarantee_on:checked ~ .services_guarantee {
+	display: block;
+}
+#services_guarantee_on:checked ~ .services_delivery,
+#services_guarantee_on:checked ~ .services_credit {
+	display: none;
+}
+#services_credit_on:checked ~ .services_credit {
+	display: block;
+}
+#services_credit_on:checked ~ .services_delivery,
+#services_credit_on:checked ~ .services_guarantee {
+	display: none;
+}
+
+
+
+
+
 .services_bottom_part_nav {
 	display: flex;
 	position: relative;
@@ -861,7 +916,7 @@ a {
 	height: 280px;
 	background: url(../img/shadow_line.png);
 }
-.services_bottom_part_nav li {
+.services_bottom_part_nav label {
 	display: flex;
 	align-items: center;
 	width: 240px;
@@ -872,10 +927,10 @@ a {
 	color: #ffffff;
 	padding-left: 23px;
 }
-.services_bottom_part_nav li:hover {
+.services_bottom_part_nav label:hover {
 	background-color: #293449;
 }
-.services_bottom_part_nav li:active {
+.services_bottom_part_nav label:active {
 	background-color: #ffffff;
 	color: #32425c;
 }
@@ -1019,6 +1074,11 @@ a {
 	line-height: 60px;
 	color: #000000;
 	text-transform: uppercase;
+}
+.breadcrumbs_link_main {
+	display: flex;
+	width: 14px;
+	height: 12px;
 }
 /*section product_page*/
 .perforator_link {

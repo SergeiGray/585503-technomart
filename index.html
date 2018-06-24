@@ -216,11 +216,14 @@
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
 				<div class="services_bottom_part">
-					<ul class="services_bottom_part_nav">
-						<li>Доставка</li>
-						<li>Гарантия</li>
-						<li>Кредит</li>							
-					</ul>
+					<input type="radio" id="services_delivery_on" class="services_delivery_on visually_hidden" name="services_switch">
+					<input type="radio" id="services_guarantee_on" class="services_guarantee_on visually_hidden" name="services_switch">
+					<input type="radio" id="services_credit_on" class="services_credit_on visually_hidden" name="services_switch">
+					<div class="services_bottom_part_nav">
+						<label for="services_delivery_on">Доставка</label>
+						<label for="services_guarantee_on">Гарантия</label>
+						<label for="services_credit_on">Кредит</label>		
+					</div>
 					<div class="services_delivery">
 						<h2 class="services_headline">Доставка</h2>
 						<p class="services_paragraph">Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!</p>
