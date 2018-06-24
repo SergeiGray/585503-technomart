@@ -1066,19 +1066,48 @@ a {
 	padding: 0;
 }
 .breadcrumbs li {
+	display: flex;
+	align-items: center;
+	height: 60px;
 	margin-right: 40px;
 }
 .breadcrumbs_link {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
-	line-height: 60px;
 	color: #000000;
 	text-transform: uppercase;
 }
 .breadcrumbs_link_main {
-	display: flex;
-	width: 14px;
+	display: flex;	
+	width: 15px;
 	height: 12px;
+	background-image: url(../img/icon-home.svg);
+	background-repeat: no-repeat;
+}
+.breadcrumbs_link_main,
+.breadcrumbs_link_catalog,
+.breadcrumbs_link_tool {
+	position: relative;
+}
+.breadcrumbs_link_main:after {
+	content: '';
+	position: absolute;
+	right: -27px;
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;	
+}
+.breadcrumbs_link_catalog:after,
+.breadcrumbs_link_tool:after {
+	content: '';
+	position: absolute;
+	top: 2px;
+	right: -27px;
+	width: 8px;
+	height: 12px;
+	background-image: url(../img/icon-right-small.svg);
+	background-repeat: no-repeat;
 }
 /*section product_page*/
 .perforator_link {
