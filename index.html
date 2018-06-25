@@ -261,30 +261,53 @@
 					<p class="about_headline">Контакты</p>
 					<p class="services_paragraph">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
 					<div class="image_container">
-						<img src="img/map-mini.jpg" alt="Карта" width="300" height="158">
+						<label for="on_off_maps"><img src="img/map-mini.jpg" alt="Карта" width="300" height="158"></label>
 					</div>
-					<a class="main_link" href="">Заблудились? Напишите нам!</a>
+					<label for="on_off_write_us" class="main_link" href="">Заблудились? Напишите нам!</label>
 				</div>
 			</div>
 		</section>
-		<section class="write_us display_off">
-			<button>Закрыть</button>
+		<input type="checkbox" id="on_off_write_us" class="on_off_write_us visually_hidden">
+		<section class="write_us">
 			<form action="">
-				<label for="your_name">Ваше имя:</label>
-				<input type="text" id="your_name" class="your_name" placeholder="Имя Фамилия">
-				<label for="your_email">Ваш e-mail:</label>
-				<input type="main" id="your_email" class="your_email" placeholder="email@example.com">
-				<label for="your_message">Текст письма:</label>
-				<textarea name="Message" id="your_message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-				<button type="submit">Отправить</button>
+				<div class="wrapper">
+					<div class="customer_data">
+						<div class="customer_data_item">
+							<label for="your_name" class="customer_label">Ваше имя:</label>
+							<input type="text" id="your_name" class="your_name" placeholder="Имя Фамилия">
+						</div>
+						<div class="customer_data_item">
+							<label for="your_email" class="customer_label">Ваш e-mail:</label>
+							<input type="main" id="your_email" class="your_email" placeholder="email@example.com">
+						</div>
+					</div>
+					<div class="customer_entry_field">
+						<label for="your_message" class="customer_label">Текст письма:</label>
+						<div>
+							<textarea name="Message" id="your_message" cols="30" rows="10" placeholder="В свободной форме"></textarea>
+						</div>
+					</div>
+				</div>
+				<div class="write_us_footer">
+					<div class="wrapper">
+						<button type="submit" class="write_us_send main_link">Отправить</button>
+						<label for="on_off_write_us" class="pop_up_close">
+							<span class="visually_hidden">Закрыть</span>
+						</label>
+					</div>
+				</div>
 			</form>
 		</section>
-		<section class="maps display_off">
-			<button>Закрыть</button>
+		<input type="checkbox" id="on_off_maps" class="on_off_maps visually_hidden">
+		<section class="maps">
+			<label for="on_off_maps" class="pop_up_close">
+				<span class="visually_hidden">Закрыть</span>
+			</label>
 			<div class="image_container">
-				<img src="img/map_big.jpg" alt="Карта" width="940" height="447">
+				<img src="img/map_big.jpg" alt="Карта" width="943" height="449">
 			</div>
-		</section>		
+		</section>
+		<div class="screen_shading"></div>				
 	</main>
 	<footer>
 		<div class="footer_heater">
