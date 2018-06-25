@@ -84,15 +84,53 @@
 				<div class="product_page_container">
 					<aside class="filter">
 						<p class="column_pointer">Фильтр:</p>
-						<form action="">
-							<label for="price_framework">Цена:</label>
-							<input type="" id="price_framework">
-							<label for="producer_framework">Производители:</label>
-							<input type="" id="producer_framework">
-							<label for="electricity_framework">Питание:</label>
-							<input type="" id="electricity_framework">
+						<form action="" class="filter_form">
+							<fieldset class="filter_item">
+								<legend>Цена:</legend>
+								<div class="range_filter">
+									<div class="range_control">
+										<div class="scale">
+											<div class="bar"></div>
+										</div>
+           								 <div class="toggle toggle_min"></div>
+            							<div class="toggle toggle_max"></div>	
+									</div>
+									<div class="price_control">
+										<label class="min_price">
+											<input type="text" name="min_price" value="0">
+										</label>
+										<label class="max_price">
+											<input name="max_price" type="text" value="15000">
+										</label>
+									</div>
+								</div>
+							</fieldset>	
+							<fieldset class="filter_item">
+								<legend>Производители:</legend>
+								<div class="filter_framework manufacturers_framework">
+									<input type="checkbox" id="manufacturers_framework_bosch" class="manufacturers_framework_bosch visually_hidden">
+									<input type="checkbox" id="manufacturers_framework_interscol" class="manufacturers_framework_interscol visually_hidden">
+									<input type="checkbox" id="manufacturers_framework_makita" class="manufacturers_framework_makita visually_hidden">
+									<input type="checkbox" id="manufacturers_framework_dewalt" class="manufacturers_framework_dewalt visually_hidden">
+									<input type="checkbox" id="manufacturers_framework_hitachi" class="manufacturers_framework_hitachi visually_hidden">
+									<label for="manufacturers_framework_bosch" class="filter_framework_item manufacturers_framework_bosch">Bosch</label>
+									<label for="manufacturers_framework_interscol" class="filter_framework_item manufacturers_framework_interscol">Интерскол</label>
+									<label for="manufacturers_framework_makita" class="filter_framework_item manufacturers_framework_makita">Makita</label>
+									<label for="manufacturers_framework_dewalt" class="filter_framework_item manufacturers_framework_dewalt">Dewalt</label>
+									<label for="manufacturers_framework_hitachi" class="filter_framework_item manufacturers_framework_hitachi">Hitachi</label>
+								</div>
+							</fieldset>
+							<fieldset class="filter_item filter_item_electricity">
+								<legend>Питание:</legend>
+								<div class="filter_framework electricity_framework">
+									<input type="radio" id="electricity_framework_rechargeable" class="electricity_framework_rechargeable visually_hidden" name="electricity_framework">
+									<input type="radio" id="electricity_framework_network" class="electricity_framework_network visually_hidden" name="electricity_framework">
+									<label for="electricity_framework_rechargeable" class="filter_framework_item electricity_framework_rechargeable">Аккумуляторные</label>
+									<label for="electricity_framework_network" class="filter_framework_item electricity_framework_network">Сетевые</label>
+								</div>
+							</fieldset>
+							<button type="submit" class="filter_button">Показать</button>				
 						</form>
-						<button type="submit">Показать</button>
 					</aside>
 					<div class="product_grid">
 						<div class="sorting">

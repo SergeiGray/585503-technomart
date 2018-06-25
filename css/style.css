@@ -884,7 +884,7 @@ a {
 	content: '';
 	position: absolute;
 	top: -35px;
-	right: -4px;
+	right: -1px;
 	width: 11px;
 	height: 280px;
 	background: url(../img/shadow_line.png) no-repeat;
@@ -1083,19 +1083,21 @@ li:not(:last-child) .breadcrumbs_link:after {
 	display: flex;
 	justify-content: space-between;
 }
-.product_page_container aside {
-	display: flex;
-	flex-direction: column;
-	width: 220px;
-}
 .product_page .product_grid {
 	display: flex;
 	flex-direction: column;
 	width: 700px;
 }			
 .filter {
+	display: flex;
+	flex-direction: column;	
+	align-items: column;
 	align-self: flex-start;
-	background-color: #f7f3ec;
+	width: 220px;	
+	background-color: #ffffff;
+}
+.filter_form p {
+	margin: 0;
 }
 .column_pointer {	
 	display: flex;
@@ -1108,24 +1110,181 @@ li:not(:last-child) .breadcrumbs_link:after {
 	text-transform: uppercase;
 	padding-left: 18px;
 	margin: 0;	
+	background-color: #f7f3ec;
 }
-.filter label {
+.filter_form legend,
+.filter_form p {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	width: 100%;
-	min-height: 55px;	
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 17px;
 	font-weight: bold;
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
-.filter	button {
+.filter_item {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+.range_filter {
+	width: 100%;
+}
+.range_control {
+	position: relative;
+	height: 41px;
+	padding-top: 39px;  
+	margin-bottom: 10px;
+	background-color: #f7f3ec;
+	border-radius: 5px;
+ 	padding-right: 20px;
+ 	padding-left: 20px;	
+}
+.range_control .scale {
+	height: 2px;
+	background: #d7dcde;
+}
+.range_control .bar {
+	width: 80%;
+	height: 2px;
+	background: #00ca74;
+}
+.range_control .toggle {
+	position: absolute;
+	top: 31px;
+	left: 0;	
+	width: 4px;
+	height: 4px;
+	padding: 0;
+	border: 8px solid #ffffff;
+	background-color: #ababab;
+	border-radius: 50%;
+	box-shadow: 0 2px 1px 0 #cfcfcf;
+	cursor: pointer;		
+}
+.range_control .toggle_min {
+	left: 18px;
+}
+.range_control .toggle_max {
+	left: 158px;
+}
+.price_control {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0;
+}
+.price_control label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.price_control input {
+	width: 95px;
+	min-height: 38px;
+	font-size: 17px;
+	font-family: "PT Sans", Arial, sans-serif;	
+	text-transform: uppercase;	
+	border: none;
+	border-radius: 5px;
+	background: #f7f3ec;
+	text-align: center;	
+}
+.min_price {
+	position: relative;
+}
+.min_price::after {
+	content: '';
+	position: absolute;
+	right: -20px;
+	width: 10px;
+	height: 1px;
+	background-color: #444444;
+}
+.filter_framework {
+	display: flex;
+	flex-direction: column;
+}
+.filter_framework_item {
+	position: relative;
+	font-size: 15px;
+	font-family: "PT Sans", Arial, sans-serif;	
+	text-transform: uppercase;
+	margin-left: 35px;
+}
+.filter_framework_item:disabled {
+	opacity: 0.4;
+}
+.filter_framework_item:not(:last-child) {
+	margin-bottom: 25px;
+}
+.filter_framework_item::before {
+	content: '';
+	position: absolute;
+	top: -3px;
+	left: -35px;
+	width: 25px;
+	height: 25px;
+	background-repeat: no-repeat;
+}
+.manufacturers_framework .filter_framework_item::before {
+	background-image: url(../img/checkbox-off.svg);
+}
+.electricity_framework .filter_framework_item::before {
+	background-image: url(../img/radio-off.svg);
+}
+.electricity_framework .filter_framework_item:hover::before {
+	background-image: url(../img/radio-off-hover.svg);
+}
+.manufacturers_framework .filter_framework_item:hover::before {
+	background-image: url(../img/checkbox-off-hover.svg);
+}
+.manufacturers_framework_bosch:checked ~ .manufacturers_framework_bosch::before,
+.manufacturers_framework_interscol:checked ~ .manufacturers_framework_interscol::before,
+.manufacturers_framework_makita:checked ~ .manufacturers_framework_makita::before,
+.manufacturers_framework_dewalt:checked ~ .manufacturers_framework_dewalt::before,
+.manufacturers_framework_hitachi:checked ~ .manufacturers_framework_hitachi::before {
+	background-image: url(../img/checkbox-on.svg);	
+}
+.manufacturers_framework_bosch:checked ~ .manufacturers_framework_bosch:hover::before,
+.manufacturers_framework_interscol:checked ~ .manufacturers_framework_interscol:hover::before,
+.manufacturers_framework_makita:checked ~ .manufacturers_framework_makita:hover::before,
+.manufacturers_framework_dewalt:checked ~ .manufacturers_framework_dewalt:hover::before,
+.manufacturers_framework_hitachi:checked ~ .manufacturers_framework_hitachi:hover::before {
+	background-image: url(../img/checkbox-on-hover.svg);	
+}
+.electricity_framework_rechargeable:checked ~ .electricity_framework_rechargeable::before,
+.electricity_framework_network:checked ~  .electricity_framework_network::before {
+	background-image: url(../img/radio-on.svg);		
+}
+.electricity_framework_rechargeable:checked ~ .electricity_framework_rechargeable:hover::before,
+.electricity_framework_network:checked ~  .electricity_framework_network:hover::before {
+	background-image: url(../img/radio-on-hover.svg);		
+}
+.filter_item_electricity {
+	margin-bottom: 80px;
+}
+.filter_button {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	color: #000000;	
+	text-transform: uppercase;
+	width: 140px;
+	height: 38px;
+	border: 1px solid #e5e5e5;
+	background-color: #ffffff;
+	border-radius: 3px;
+}
+.filter_button:hover {
+	border: 1px solid #bdc6ca;	
+}
+.filter_button:active {
+	border: 1px solid #ee3643;	
 }
 .sorting {
 	display: flex;
@@ -1170,7 +1329,7 @@ li:not(:last-child) .breadcrumbs_link:after {
 	border-top: 0;
 	border-right: 5px solid  transparent;
 	border-left: 5px solid  transparent;	
-	border-bottom: 10px solid #ee3643;
+	border-bottom: 10px solid #c5c5c5;
 	margin-right: 20px;
 }
 .sort_by_reduction {
@@ -1180,6 +1339,18 @@ li:not(:last-child) .breadcrumbs_link:after {
 	border-right: 5px solid  transparent;
 	border-left: 5px solid  transparent;	
 	border-bottom: 0;
+}
+.sorting_by_increase:hover {
+	border-bottom: 10px solid #231f20;
+}
+.sort_by_reduction:hover {
+	border-top: 10px solid #231f20;
+}
+.sorting_by_increase:active {
+	border-bottom: 10px solid #ee3643;
+}
+.sort_by_reduction:active {
+	border-top: 10px solid #ee3643;
 }
 .puncher_products_grid {
 	display: flex;
@@ -1213,6 +1384,7 @@ li:not(:last-child) .breadcrumbs_link:after {
 	color: #000000;	
 	background-color: #ffffff;
 	border: 1px solid #e5e5e5;
+	border-radius: 3px;
 }
 .pagination a:not(.pagination_next) {
 	width: 38px;
