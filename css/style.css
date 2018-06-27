@@ -907,6 +907,18 @@ a {
 	background-color: #ffffff;
 	color: #32425c;
 }
+#services_delivery_on:checked ~ .services_bottom_part_nav .services_delivery_on_button {
+	background-color: #ffffff;
+	color: #32425c;
+}
+#services_guarantee_on:checked ~ .services_bottom_part_nav .services_guarantee_on_button {
+	background-color: #ffffff;
+	color: #32425c;
+}
+#services_credit_on:checked ~ .services_bottom_part_nav .services_credit_on_button {
+	background-color: #ffffff;
+	color: #32425c;
+}
 .services_bottom_content {
 	margin-left: 80px;
 }
@@ -1064,6 +1076,7 @@ a {
 	width: 460px;
 	height: 38px;
 	border-radius: 3px;
+	border: 0;
 }
 .customer_data {
 	display: flex;
@@ -1228,7 +1241,6 @@ li:not(:last-child) .breadcrumbs_link:after {
 .filter {
 	display: flex;
 	flex-direction: column;	
-	align-items: column;
 	align-self: flex-start;
 	width: 220px;	
 	background-color: #ffffff;
@@ -1261,8 +1273,8 @@ li:not(:last-child) .breadcrumbs_link:after {
 	color: #000000;
 	background-color: #ffffff;
 	text-transform: uppercase;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 .filter_item {
 	width: 100%;
