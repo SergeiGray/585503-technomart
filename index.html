@@ -5,7 +5,8 @@
     <title>HTML Academy: Техномарт</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-   	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> 
+   	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700" rel="stylesheet">  
+   	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">    	 
 </head>
 <body>
 	<header class="main_header">
@@ -13,37 +14,37 @@
 			<div class="wrapper">
 				<a href="index.html" class="logo">Техномарт</a>
 				<form class="search">
-					<label for="search_field" class="visually_hidden"> Поиск:</label>
+					<label for="search_field" class="visually_hidden search_field_label"> Поиск:</label>
 					<input type="search" id="search_field" class="search_field" placeholder="Поиск:">
 				</form>
-				<a href="" class="bookmark">Закладки: 0</a>
-				<a href="" class="basket">Корзина: 0</a>
-				<a href="" class="ordering">Оформить заказ</a>
+				<a href="" class="bookmark top_header_link">Закладки: 0</a>
+				<a href="" class="basket top_header_link">Корзина: 0</a>
+				<a href="" class="ordering top_header_link">Оформить заказ</a>
 			</div>
 		</div>
 		<div class="main_header_main">
 			<div class="wrapper">			
 				<div class="main_header_about_market">
-					<p>Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+					<p class="main_header_about_market_text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
 				</div>
 				<div class="main_header_contacts">
-					<a href="tel:+78125550555">+7 (812) 555-05-55</a>
-					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+					<a href="tel:+78125550555" class="main_header_contacts_link">+7 (812) 555-05-55</a>
+					<p class="main_header_contacts_text">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="entry">
 					<div class="entry_form">
-						<a href="" class="entry_form_login">Войти</a>
-						<a href="">Регистрация</a>
+						<a href="" class="entry_form_login entry_form_link">Войти</a>
+						<a href="" class="entry_form_registration entry_form_link">Регистрация</a>
 					</div>
 					<div class="entry_persone visually_hidden">
 						<div class="entry_name">
-							<p>Равшан Джамшутович</p>
+							<p class="entry_name_customer">Равшан Джамшутович</p>
 							<button type="button" class="visually_hidden">Выход</button>
 						</div>
 
 						<div class="entry_persone_info">
-							<a href="">Мои заказы</a>
-							<a href="">Личный кабинет</a>
+							<a href="" class="entry_persone_info_link">Мои заказы</a>
+							<a href="" class="entry_persone_info_link">Личный кабинет</a>
 						</div>
 					</div>
 				</div>
@@ -129,8 +130,8 @@
 								<img src="img/puncher-bosch-bfg-9000.jpg" alt="Перфоратор BOSCH BFG 9000" width="184" height="164">
 							</div>
 							<div class="buy_or_remember">
-								<a href="">Купить</a>
-								<a href="">В закладки</a>
+								<a href="" class="buy">Купить</a>
+								<a href="" class="save">В закладки</a>
 							</div>
 						</div>
 						<p>Перфоратор BOSCH BFG 9000</p>
@@ -145,8 +146,8 @@
 								<img src="img/puncher-bosch-bfg-3000.jpg" alt="Перфоратор BOSCH BFG 3000" width="127" height="112">
 							</div>
 							<div class="buy_or_remember">
-								<a href="">Купить</a>
-								<a href="">В закладки</a>
+								<a href="" class="buy">Купить</a>
+								<a href="" class="save">В закладки</a>
 							</div>
 						</div>
 						<p>Перфоратор BOSCH BFG 3000</p>
@@ -161,8 +162,8 @@
 								<img src="img/puncher-bosch-bfg-6000.jpg" alt="Перфоратор BOSCH BFG 6000" width="144" height="128">
 							</div>
 							<div class="buy_or_remember display_off">
-								<a href="">Купить</a>
-								<a href="">В закладки</a>
+								<a href="" class="buy">Купить</a>
+								<a href="" class="save">В закладки</a>
 							</div>
 						</div>
 						<p>Перфоратор BOSCH BFG 6000</p>
@@ -177,8 +178,8 @@
 								<img src="img/puncher-bosch-bfg-2000.jpg" alt="Перфоратор BOSCH BFG 2000" width="127" height="112">
 							</div>
 							<div class="buy_or_remember display_off">
-								<a href="">Купить</a>
-								<a href="">В закладки</a>
+								<a href="" class="buy">Купить</a>
+								<a href="" class="save">В закладки</a>
 							</div>
 						</div>
 						<p>Перфоратор BOSCH BFG 2000</p>
@@ -307,6 +308,20 @@
 				<img src="img/map_big.jpg" alt="Карта" width="943" height="449">
 			</div>
 		</section>
+		<section class="product_added display_off">
+			<div class="pop_up_close product_added_close_button">
+				<span class="visually_hidden">Закрыть</span>
+			</div>
+			<div class="wrapper">
+				<p class="product_added_title">Товар добавлен в корзину!</p>
+			</div>
+			<div class="product_added_footer">
+				<div class="wrapper">
+					<a href="" class="main_link">Оформить заказ</a>
+					<p class="product_added_close">Продолжить покупки</p>
+				</div>
+			</div>
+		</section>
 		<div class="screen_shading"></div>				
 	</main>
 	<footer>
@@ -348,6 +363,7 @@
 			</div>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
   </body>
 </html>
