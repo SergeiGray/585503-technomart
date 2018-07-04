@@ -354,7 +354,7 @@ background: #ee3643;
 	margin-bottom: 10px;
 	box-sizing: border-box;
 }
-.entry_name_customer{
+.entry_name_customer {
 	margin: 0 0 0 45px;
 }
 .entry_name:before {
@@ -609,6 +609,7 @@ background: #ee3643;
 	font-size: 14px;
 	color: #ffffff;
 	text-transform: uppercase;
+	border: 0;
 }
 .main_link:hover {
 	background-color: #ca2c37;
@@ -722,7 +723,6 @@ background: #ee3643;
 	background: url(../img/price-link-background.svg) no-repeat;
 	background-color: transparent;
 }
-
 .price .main_link:hover {
 	background-image: url(../img/price-link-background-hover.svg);
 }
@@ -730,6 +730,7 @@ background: #ee3643;
 	background-image: url(../img/price-link-background-active.svg);
 }
 .buy_or_remember .buy {
+	position: relative;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -750,6 +751,20 @@ background: #ee3643;
 .buy_or_remember .buy:active {
 	background-color: #518534;
 	box-shadow: none;		
+}
+.buy_or_remember .buy::before {
+	content: '';
+	position: absolute;
+	top: 11px;
+	left: 12px;
+	width: 15px;
+	height: 15px;
+	background: url(../img/icon-cart.svg) no-repeat;
+	opacity: 0.3;
+}
+.buy_or_remember .buy:hover::before,
+.buy_or_remember .buy:active::before {
+	opacity: 1;
 }
 .buy_or_remember .save {
 	display: flex;
@@ -1026,7 +1041,6 @@ background: #ee3643;
 }
 /*section write_us*/
 .write_us {
-	display: none;
 	position: fixed;
 	top: 50%;
 	margin-top: -215px;
@@ -1133,16 +1147,29 @@ background: #ee3643;
 	opacity: 0.5;
 	z-index: 1;
 }
-.on_off_write_us:checked ~ .write_us {
+.modal_show {
 	display: flex;
-	z-index: 2;
+	animation: bounce 0.6s;	
 }
-.on_off_write_us:checked ~ .screen_shading {
-	display: flex;
+@keyframes bounce {
+  0% {
+    transform: translateY(2000px);
+  }
+
+  70% {
+    transform: translateY(-30px);
+  }
+
+  90% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
 }
 /*section maps*/
 .maps {
-	display: none;
 	position: fixed;
 	top: 50%;
 	margin-top: -225px;
@@ -1154,13 +1181,6 @@ background: #ee3643;
 	height: 449px;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 	z-index: 1;	
-}
-.on_off_maps:checked ~ .maps {
-	display: flex;
-	z-index: 2;
-}
-.on_off_maps:checked ~ .screen_shading {
-	display: flex;
 }
 /*section product_added*/
 .product_added {
