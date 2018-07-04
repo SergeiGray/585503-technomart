@@ -106,30 +106,42 @@
 									</div>
 								</div>
 							</fieldset>	
-							<div class="filter_form_shadow_line"></div>
 							<fieldset class="filter_form_item">
 								<legend class="filter_form_item_title">Производители:</legend>
 								<div class="filter_framework manufacturers_framework">
-									<input type="checkbox" id="manufacturers_framework_bosch" class="manufacturers_framework_bosch visually_hidden">
-									<input type="checkbox" id="manufacturers_framework_interscol" class="manufacturers_framework_interscol visually_hidden">
-									<input type="checkbox" id="manufacturers_framework_makita" class="manufacturers_framework_makita visually_hidden">
-									<input type="checkbox" id="manufacturers_framework_dewalt" class="manufacturers_framework_dewalt visually_hidden">
-									<input type="checkbox" id="manufacturers_framework_hitachi" class="manufacturers_framework_hitachi visually_hidden">
-									<label for="manufacturers_framework_bosch" class="filter_framework_item manufacturers_framework_bosch">Bosch</label>
-									<label for="manufacturers_framework_interscol" class="filter_framework_item manufacturers_framework_interscol">Интерскол</label>
-									<label for="manufacturers_framework_makita" class="filter_framework_item manufacturers_framework_makita">Makita</label>
-									<label for="manufacturers_framework_dewalt" class="filter_framework_item manufacturers_framework_dewalt">Dewalt</label>
-									<label for="manufacturers_framework_hitachi" class="filter_framework_item manufacturers_framework_hitachi">Hitachi</label>
+									<div class="filter_form_container">
+										<input type="checkbox" id="manufacturers_framework_bosch" class="manufacturers_framework_bosch visually_hidden">
+										<label for="manufacturers_framework_bosch" class="filter_framework_item manufacturers_framework_bosch">Bosch</label>
+									</div>
+									<div class="filter_form_container">
+										<input type="checkbox" id="manufacturers_framework_interscol" class="manufacturers_framework_interscol visually_hidden">
+										<label for="manufacturers_framework_interscol" class="filter_framework_item manufacturers_framework_interscol">Интерскол</label>
+									</div>
+									<div class="filter_form_container">
+										<input type="checkbox" id="manufacturers_framework_makita" class="manufacturers_framework_makita visually_hidden">
+										<label for="manufacturers_framework_makita" class="filter_framework_item manufacturers_framework_makita">Makita</label>
+									</div>
+									<div class="filter_form_container">
+										<input type="checkbox" id="manufacturers_framework_dewalt" class="manufacturers_framework_dewalt visually_hidden">
+										<label for="manufacturers_framework_dewalt" class="filter_framework_item manufacturers_framework_dewalt">Dewalt</label>
+									</div>
+									<div class="filter_form_container">
+										<input type="checkbox" id="manufacturers_framework_hitachi" class="manufacturers_framework_hitachi visually_hidden">
+										<label for="manufacturers_framework_hitachi" class="filter_framework_item manufacturers_framework_hitachi">Hitachi</label>
+									</div>
 								</div>
 							</fieldset>
-							<div class="filter_form_shadow_line"></div>
 							<fieldset class="filter_form_item filter_item_electricity">
 								<legend class="filter_form_item_title">Питание:</legend>
 								<div class="filter_framework electricity_framework">
-									<input type="radio" id="electricity_framework_rechargeable" class="electricity_framework_rechargeable visually_hidden" name="electricity_framework">
-									<input type="radio" id="electricity_framework_network" class="electricity_framework_network visually_hidden" name="electricity_framework">
-									<label for="electricity_framework_rechargeable" class="filter_framework_item electricity_framework_rechargeable">Аккумуляторные</label>
-									<label for="electricity_framework_network" class="filter_framework_item electricity_framework_network">Сетевые</label>
+									<div class="filter_form_container">
+										<input type="radio" id="electricity_framework_rechargeable" class="electricity_framework_rechargeable visually_hidden" name="electricity_framework">
+										<label for="electricity_framework_rechargeable" class="filter_framework_item electricity_framework_rechargeable">Аккумуляторные</label>
+									</div>
+									<div class="filter_form_container">
+										<input type="radio" id="electricity_framework_network" class="electricity_framework_network visually_hidden" name="electricity_framework">
+										<label for="electricity_framework_network" class="filter_framework_item electricity_framework_network">Сетевые</label>
+									</div>
 								</div>
 							</fieldset>
 							<button type="submit" class="filter_button">Показать</button>				
@@ -374,6 +386,5 @@
 		</div>
 	</footer>
 	<script src="js/script.js"></script>	
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

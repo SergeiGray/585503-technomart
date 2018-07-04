@@ -2,7 +2,7 @@ html {
 	box-sizing: border-box;
 }
 body {
-	font-family: 'Cuprum', Arial, sans-serif;
+	font-family: "Cuprum", Arial, sans-serif;
 	font-size: 13px;
 }
 a { 
@@ -51,7 +51,7 @@ a {
 	background-color: #ee3643;
 }
 .logo::after {
-	content: '';
+	content: "";
 	position: absolute;
 	bottom: -5px;
 	left: 0;
@@ -139,7 +139,7 @@ a {
 	position: relative;
 }
 .bookmark::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 12px;
 	left: 10px;
@@ -158,7 +158,7 @@ a {
 	position: relative;
 }
 .basket::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 12px;
 	left: 10px;
@@ -231,7 +231,7 @@ background: #ee3643;
 	align-items: center;
 }
 .main_header_contacts::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 13px;
 	left: 15px;
@@ -278,7 +278,7 @@ background: #ee3643;
 	background-color: #ffffff;
 }
 .entry_form_login::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 14px;
 	left: 14px;
@@ -327,7 +327,7 @@ background: #ee3643;
 	margin-right: 20px;
 }
 .entry_persone_info_link:first-child::after {
-	content: '';
+	content: "";
 	width: 4px;
 	height: 5px;
 	background-color: #32425c;
@@ -358,7 +358,7 @@ background: #ee3643;
 	margin: 0 0 0 45px;
 }
 .entry_name:before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 13px;
 	left: 13px;
@@ -487,7 +487,7 @@ background: #ee3643;
 	overflow: hidden;
 }
 .sticker::after {
-	content: 'new';
+	content: "new";
 	position: absolute;
 	top: 5px;
 	right: -23px;
@@ -753,7 +753,7 @@ background: #ee3643;
 	box-shadow: none;		
 }
 .buy_or_remember .buy::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 11px;
 	left: 12px;
@@ -881,7 +881,7 @@ background: #ee3643;
 	padding: 0;
 }
 .services_bottom_part_nav:after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -35px;
 	right: -1px;
@@ -923,7 +923,7 @@ background: #ee3643;
 	margin-left: 80px;
 }
 .services_delivery::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 20px;
 	right: 0;
@@ -933,7 +933,7 @@ background: #ee3643;
 	background-repeat: no-repeat;
 }
 .services_guarantee::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -943,7 +943,7 @@ background: #ee3643;
 	background-repeat: no-repeat;
 }
 .services_credit::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -1017,7 +1017,7 @@ background: #ee3643;
 	color: #000000;	
 }
 .about_company_link::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 50%;
 	left: -35px;
@@ -1124,7 +1124,7 @@ background: #ee3643;
 }
 .pop_up_close::before,
 .pop_up_close::after {
-	content: '';
+	content: "";
 	position: absolute;
 	width: 23px;
 	height: 3px;
@@ -1182,6 +1182,9 @@ background: #ee3643;
 	box-shadow: 0 20px 40px rgba(0, 0, 0, 0.75);
 	z-index: 1;	
 }
+.interactive_map {
+	border: 0;
+}
 /*section product_added*/
 .product_added {
 	position: fixed;
@@ -1214,7 +1217,7 @@ background: #ee3643;
 	margin: 0 0 0 100px;
 }
 .product_added_title::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -13px;
 	left: -98px;
@@ -1281,7 +1284,7 @@ background: #ee3643;
 	background-repeat: no-repeat;
 }
 .breadcrumbs_list_item:not(:last-child) .breadcrumbs_link::after {
-	content: '';
+	content: "";
 	position: absolute;
 	top: 2px;
 	right: -27px;
@@ -1334,11 +1337,9 @@ background: #ee3643;
 	margin: 0;	
 	background-color: #f7f3ec;
 }
-.filter_form_shadow_line {
-	width: 100%;
-	height: 1px;
-	background-color: #e5e5e5;
-	margin-top: 25px;
+.filter_form_item:not(:last-of-type) {
+	border-bottom: 1px solid #e5e5e5;
+	padding-bottom: 25px;
 }
 .filter_form_item_title {
 	display: flex;
@@ -1426,7 +1427,7 @@ background: #ee3643;
 	position: relative;
 }
 .min_price::after {
-	content: '';
+	content: "";
 	position: absolute;
 	right: -20px;
 	width: 10px;
@@ -1444,6 +1445,9 @@ background: #ee3643;
 	text-transform: uppercase;
 	margin-left: 35px;
 }
+.filter_form_container:not(:last-child) {
+	margin-bottom: 25px;
+}
 .filter_framework_item:disabled {
 	opacity: 0.4;
 }
@@ -1451,7 +1455,7 @@ background: #ee3643;
 	margin-bottom: 25px;
 }
 .filter_framework_item::before {
-	content: '';
+	content: "";
 	position: absolute;
 	top: -3px;
 	left: -35px;
