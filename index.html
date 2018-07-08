@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style-min.css">  	 
+	<meta charset="UTF-8">
+	<title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">  	 
 </head>
 <body>
 	<header class="main_header">
@@ -23,7 +23,7 @@
 		<div class="main_header_main">
 			<div class="wrapper">			
 				<div class="main_header_about_market">
-					<p class="main_header_about_market_text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+					<div class="main_header_about_market_text"><span>Интернет-магазин</span><span>строительных материалов</span><span>и инструментов для ремонта</span></div>
 				</div>
 				<div class="main_header_contacts">
 					<a href="tel:+78125550555" class="main_header_contacts_link">+7 (812) 555-05-55</a>
@@ -36,10 +36,9 @@
 					</div>
 					<div class="entry_persone visually_hidden">
 						<div class="entry_name">
-							<p class="entry_name_customer">Равшан Джамшутович</p>
-							<button type="button" class="visually_hidden">Выход</button>
+							<a href="profile.html" class="entry_name_customer">Равшан Джамшутович</a>
+							<a href="deactivation.html" class="button_entry"><span class="visually_hidden">Выход</span></a>
 						</div>
-
 						<div class="entry_persone_info">
 							<a href="" class="entry_persone_info_link">Мои заказы</a>
 							<a href="" class="entry_persone_info_link">Личный кабинет</a>
@@ -81,8 +80,8 @@
 				</div>
 				<div class="slider_and_info">
 					<div class="slider">
-						<input type="radio" id="slider_swich_backward" class="slider_swich_backward visually_hidden" name="slider_swich" value="1">
-						<input type="radio" id="slider_swich_forward" class="slider_swich_forward visually_hidden" name="slider_swich" value="2">
+						<input type="radio" id="slider_swich_backward" class="slider_swich_backward" name="slider_swich" value="1" checked>
+						<input type="radio" id="slider_swich_forward" class="slider_swich_forward" name="slider_swich" value="2">
 						<label for="slider_swich_backward"></label>
 						<label for="slider_swich_forward"></label>
 						<div class="slider_drill">
@@ -211,7 +210,7 @@
 			<div class="wrapper">
 				<div class="services_top_part">
 					<h2 class="services_top_part_title">Сервисы</h2>
-					<p class="services_paragraph">Хороший интернет-магазин отличается от плохого не только ценами! <br>
+					<p class="services_paragraph"><span>Хороший интернет-магазин отличается от плохого не только ценами!</span>
 					Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 				</div>
 				<div class="services_bottom_part">
@@ -230,7 +229,7 @@
 					</div>
 					<div class="services_guarantee services_bottom_content">
 						<h2 class="services_headline">Гарантия</h2>
-						<p class="services_paragraph">Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии.<br> Мы обменяем сгоревший товар на новый. </p>
+						<p class="services_paragraph"><span>Если купленный у нас товар поломается или заискрит,</span><br> <span>а также в случае пожара, спровоцированного его возгаранием,</span> <span>вы всегда можете быть уверены в нашей гарантии. Мы обменяем</span> <span>сгоревший товар на новый.</span> </p>
 						<p class="services_paragraph">Дом уж восстановите как-нибудь сами.</p>
 					</div>
 					<div class="services_credit services_bottom_content">
@@ -247,7 +246,7 @@
 				<div class="about_company">
 					<h1 class="about_headline">Компания «Техномарт»</h1>
 					<p class="services_paragraph">Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-					<p class="services_paragraph">Мы можем доставить ваш товар в самые отдаленные точки России! <br>
+					<p class="services_paragraph">Мы можем доставить ваш товар в самые отдаленные точки России!
 					Техномарт работает со многими транспортными компаниями:</p>
 					<ul class="about_company_list">
 						<li><a class="about_company_link" href="">Деловые линии</a></li>
@@ -258,7 +257,7 @@
 				</div>
 				<div class="contacts">
 					<p class="about_headline">Контакты</p>
-					<p class="services_paragraph">Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+					<p class="services_paragraph"><span>Вы можете забрать товар сами,</span> <span>заехав в наш офис:</span></p>
 					<div class="image_container">
 						<img src="img/map-mini.jpg" alt="Карта" width="300" height="158" class="contacts_maps">
 					</div>
@@ -289,25 +288,25 @@
 				<div class="write_us_footer">
 					<div class="wrapper">
 						<button type="submit" class="write_us_send main_link">Отправить</button>
-						<div class="pop_up_close write_us_close">
+						<button type="button" class="pop_up_close write_us_close">
 							<span class="visually_hidden">Закрыть</span>
-						</div>
+						</button>
 					</div>
 				</div>
 			</form>
 		</section>
 		<section class="maps display_off">
-			<div class="pop_up_close map_close">
+			<button type="button" class="pop_up_close map_close">
 				<span class="visually_hidden">Закрыть</span>
-			</div>
+			</button>
 			<div class="image_container">
 				<iframe class="interactive_map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123572!2d30.320894615524708!3d59.9387968690486!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1530665803595" width="943" height="449" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="product_added display_off">
-			<div class="pop_up_close product_added_close_button">
+			<button type="button" class="pop_up_close product_added_close_button">
 				<span class="visually_hidden">Закрыть</span>
-			</div>
+			</button>
 			<div class="wrapper">
 				<p class="product_added_title">Товар добавлен в корзину!</p>
 			</div>
@@ -334,7 +333,7 @@
 					</ul>
 				</div>
 				<div class="footer_heater_bottom">
-					<p class="footer_contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a href="tel:+78125550555" class="footer_contacts_link">+7 (812) 555-05-55</a></p>
+					<p class="footer_contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555" class="footer_contacts_link">+7 (812) 555-05-55</a></p>
 					<ul class="footer_heater_bottom_list">
 						<li class="footer_heater_bottom_list_item"><a class="footer_nav_link yellow" href="">Материалы</a></li>
 						<li class="footer_heater_bottom_list_item"><a class="footer_nav_link yellow" href="">Техника</a></li>
@@ -346,19 +345,19 @@
 		</div>
 		<div class="footer_footer">
 			<div class="wrapper">
-				<p class="copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
+				<p class="copyright">© 2010–2017 Компания «Техномарт» <span>Все права защищены</span></p>
 				<div class="social">
 					<a href="" class="social_link social_link_vk"><span class="visually_hidden">VK</span></a>
 					<a href="" class="social_link social_link_facebook"><span class="visually_hidden">Facebook</span></a>
 					<a href="" class="social_link social_link_instagram"><span class="visually_hidden">Instagram</span></a>
 				</div>
-				<p class="feedback">Обратная связь: <br>
+				<p class="feedback"><span>Обратная связь:</span>
 					<a href="mailto:mail@htmlacademy.ru" class="feedback_link">mail@htmlacademy.ru</a></p>
-				<p class="developed_by">Разработано — <br>
+				<p class="developed_by"><span>Разработано —</span>
 					<a href="https://htmlacademy.ru/intensive/htmlcss" class="developed_by_link">htmlacademy.ru</a></p>
 			</div>
 		</div>
 	</footer>
 	<script src="js/script-min.js"></script>
-  </body>
+</body>
 </html>

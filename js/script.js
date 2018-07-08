@@ -43,12 +43,15 @@ writeUs.addEventListener("click", function (event) {
 writeUsClose.addEventListener("click", function (event) {
 	event.preventDefault();
 	writeUsBlock.classList.remove("modal_show");
+	writeUsBlock.classList.remove("modal-error");
 	writeUsBlock.classList.add("display_off");
 });
 writeUsForm.addEventListener("submit", function (event) {
 	if ( !writeUsName.value || !writeUsMail.value || !writeUsText.value) {
 		event.preventDefault();
-		console.log("Нужно ввести имя, почту и текст сообщения");
+		writeUsBlock.classList.remove("modal-error");
+		writeUsBlock.offsetWidth = writeUsBlock.offsetWidth;		
+		writeUsBlock.classList.add("modal-error");
 	} else {
       localStorage.setItem("Name", writeUsName.value);
       localStorage.setItem("Mail", writeUsMail.value);

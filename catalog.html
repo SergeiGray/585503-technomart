@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-    <title>HTML Academy: Техномарт</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style-min.css"> 
+	<title>HTML Academy: Техномарт</title>
+	<link rel="stylesheet" type="text/css" href="css/normalize-min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css"> 
 </head>
 <body>
 	<header class="main_header">
@@ -16,14 +16,14 @@
 					<input type="search" id="search_field" class="search_field" placeholder="Поиск:">
 				</form>
 				<a href="" class="bookmark top_header_link">Закладки: 0</a>
-				<a href="" class="basket top_header_link">Корзина: 0</a>
+				<a href="" class="basket top_header_link basket_buy"> Корзина: 10</a>
 				<a href="" class="ordering top_header_link">Оформить заказ</a>
 			</div>
 		</div>
 		<div class="main_header_main">
 			<div class="wrapper">
 				<div class="main_header_about_market">
-					<p class="main_header_about_market_text">Интернет-магазин строительных материалов<br> и инструментов для ремонта</p>
+					<div class="main_header_about_market_text"><span>Интернет-магазин</span><span>строительных материалов</span><span>и инструментов для ремонта</span></div>
 				</div>
 				<div class="main_header_contacts">
 					<a href="tel:+78125550555" class="main_header_contacts_link">+7 (812) 555-05-55</a>
@@ -36,11 +36,9 @@
 					</div>
 					<div class="entry_persone">
 						<div class="entry_name">
-							<p class="entry_name_customer">Равшан Джамшутович</p>
-							<button type="button" id="button_entry" class="visually_hidden">Выход</button>
-							<label for="button_entry"></label>
+							<a href="profile.html" class="entry_name_customer">Равшан Джамшутович</a>
+							<a href="deactivation.html" class="button_entry"><span class="visually_hidden">Выход</span></a>
 						</div>
-
 						<div class="entry_persone_info">
 							<a href="" class="entry_persone_info_link">Мои заказы</a>
 							<div></div>
@@ -91,8 +89,8 @@
 										<div class="scale">
 											<div class="bar"></div>
 										</div>
-           								 <div class="toggle toggle_min"></div>
-            							<div class="toggle toggle_max"></div>	
+										<button type="button" class="toggle toggle_min"></button>
+										<button type="button" class="toggle toggle_max"></button>
 									</div>
 									<div class="price_control">
 										<label class="min_price price_control_label">
@@ -328,9 +326,9 @@
 			</div>
 		</section>
 		<section class="product_added display_off">
-			<div class="pop_up_close product_added_close_button">
+			<button type="button" class="pop_up_close product_added_close_button">
 				<span class="visually_hidden">Закрыть</span>
-			</div>
+			</button>
 			<div class="wrapper">
 				<p class="product_added_title">Товар добавлен в корзину!</p>
 			</div>
@@ -358,7 +356,7 @@
 					</ul>
 				</div>
 				<div class="footer_heater_bottom">
-					<p class="footer_contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br><a href="tel:+78125550555" class="footer_contacts_link">+7 (812) 555-05-55</a></p>
+					<p class="footer_contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <a href="tel:+78125550555" class="footer_contacts_link">+7 (812) 555-05-55</a></p>
 					<ul class="footer_heater_bottom">
 						<li class="footer_heater_bottom_list_item"><a class="footer_nav_link yellow" href="">Материалы</a></li>
 						<li class="footer_heater_bottom_list_item"><a class="footer_nav_link yellow" href="">Техника</a></li>
@@ -370,15 +368,15 @@
 		</div>
 		<div class="footer_footer">
 			<div class="wrapper">
-				<p class="copyright">© 2010–2017 Компания «Техномарт»<br>Все права защищены</p>
+				<p class="copyright"><span>© 2010–2017 Компания «Техномарт»</span><span>Все права защищены</span></p>
 				<div class="social">
 					<a href="" class="social_link social_link_vk"><span class="visually_hidden">VK</span></a>
 					<a href="" class="social_link social_link_facebook"><span class="visually_hidden">Facebook</span></a>
 					<a href="" class="social_link social_link_instagram"><span class="visually_hidden">Instagram</span></a>
 				</div>
-				<p class="feedback">Обратная связь: <br>
+				<p class="feedback">Обратная связь:
 					<a href="mailto:mail@htmlacademy.ru" class="feedback_link">mail@htmlacademy.ru</a></p>
-				<p class="developed_by">Разработано — <br>
+				<p class="developed_by">Разработано —
 					<a href="https://htmlacademy.ru/intensive/htmlcss" class="developed_by_link">htmlacademy.ru</a></p>
 			</div>
 		</div>
