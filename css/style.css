@@ -9,6 +9,9 @@ body {
 a { 
 	text-decoration: none;
 }
+input:focus ~ label {
+	outline: 1px dotted #000;
+}
 .visually_hidden {
 	position: absolute;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -146,7 +149,7 @@ a {
 }
 .bookmark {
 	position: relative;
-	padding-left: 16px;		
+	padding: 0 0 1px 17px;	
 }
 .bookmark::before {
 	content: "";
@@ -199,6 +202,7 @@ a {
 }
 .ordering {
 	background-color: #63a63e;
+	padding: 0px 0 1px 0;	
 }
 .ordering:hover {
 	background-color: #5fbb2d;
@@ -391,6 +395,11 @@ a {
 .entry_name_customer:active:before {
 	background-image: url(../img/icon-user.svg);	
 }
+.entry_name .button_entry {
+	width: 20px;
+	height: 17px;
+	margin-left: 40px;
+}
 .entry_name .button_entry::after {
 	content: "";
 	position: absolute;
@@ -503,6 +512,7 @@ a {
 }
 /*main*/
 .category_headline {
+	width: 70%;
 	font-size: 30px;
 	color: #32425c;
 	font-weight: normal;
@@ -1033,7 +1043,6 @@ a {
 .services {
 	background-color: #f4f7f9;
 	padding-top: 61px;
-	padding-bottom: 105px;
 	overflow: hidden;
 }
 .services_top_part {
@@ -1147,37 +1156,24 @@ a {
 	color: #32425c;
 }
 .services_bottom_content {
-	margin-left: 80px;
+	width: 700px;
+	min-height: 285px;
+	padding-left: 80px;
 }
-.services_delivery::after {
-	content: "";
-	position: absolute;
-	top: 22px;
-	right: 0;
-	width: 468px;
-	height: 261px;
+.services_delivery {
 	background-image: url(../img/delivery-car.png);
 	background-repeat: no-repeat;
+	background-position: 230px 23px;
 }
-.services_guarantee::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 389px;
-	height: 283px;
+.services_guarantee {
 	background-image: url(../img/guarantee.png);
 	background-repeat: no-repeat;
+	background-position: 320px;
 }
-.services_credit::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: -8px;
-	width: 465px;
-	height: 285px;
+.services_credit {
 	background-image: url(../img/credit.png);
 	background-repeat: no-repeat;
+	background-position: 245px;
 }
 .services_bottom_content .services_headline {
 	margin-bottom: 24px;
@@ -1197,7 +1193,7 @@ a {
 .about .wrapper {
 	display: flex;
 	justify-content: space-between;
-	padding-top: 72px;
+	padding-top: 75px;
 	margin-bottom: 85px;
 }
 .about_company {
@@ -1589,8 +1585,6 @@ a {
 .column_pointer {	
 	display: flex;
 	justify-content: flex-start;
-	align-items: center;
-	height: 38px;
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 13px;
 	color: #000000;
@@ -1601,6 +1595,10 @@ a {
 	box-sizing: border-box;
 	padding-left: 20px;
 	padding-bottom: 2px;
+}
+.filter .column_pointer {
+	height: 38px;
+	align-items: center;	
 }
 .filter_form_item:not(:last-of-type) {
 	border-bottom: 1px solid #e5e5e5;
@@ -1808,12 +1806,15 @@ a {
 }
 .sorting {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	background-color: #f7f3ec;
 	margin-bottom: 20px;
+	padding-top: 11px;	
 }
 .sorting_title {
-	margin-right: 140px;	
+	margin-right: 138px;
+	margin-bottom: 11px;		
 }
 .sorting_by_price {
 	margin-right: 70px;
@@ -1822,7 +1823,7 @@ a {
 	margin-right: 65px;	
 }
 .sorting_by_function {
-	margin-right: 45px;	
+	margin-right: 46px;	
 }
 .sorting_link {
 	flex-wrap: nowrap;
@@ -1833,6 +1834,7 @@ a {
 	opacity: 0.3;
 	text-transform: uppercase;
 	border-bottom: 1px dotted #ee3643;	
+	margin-bottom: 13px;	
 }
 .sorting_link:hover {
 	color: #000000;
@@ -1842,7 +1844,7 @@ a {
 .sorting_link_active {
 	color: #ee3643;
 	opacity: 1;
-	border: none;
+	border: 1px solid transparent;
 }
 .sorting_by_increase {
 	width: 0;
@@ -1852,6 +1854,7 @@ a {
 	border-left: 5px solid  transparent;	
 	border-bottom: 10px solid #c5c5c5;
 	margin-right: 23px;
+	margin-bottom: 12px;	
 }
 .sort_by_reduction {
 	width: 0;
@@ -1860,6 +1863,7 @@ a {
 	border-right: 5px solid  transparent;
 	border-left: 5px solid  transparent;	
 	border-bottom: 0;
+	margin-bottom: 12px;	
 }
 .sorting_by_increase:hover {
 	border-bottom: 10px solid #231f20;
